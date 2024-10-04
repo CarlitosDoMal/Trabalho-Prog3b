@@ -1,77 +1,81 @@
-const numeroSenha = document.querySelector('.parametro-senha__texto');
-let tamanhoSenha = 12;
-numeroSenha.textContent = tamanhoSenha;
-const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
-const numeross = '0123456789';
-const simbolos = '!@%*?';
-const botoes = document.querySelectorAll('.parametro-senha_botao');
-const campoSenha = document.querySelector('#campo-senha');
-const checkbox = document.querySelectorAll('.checkbox');
-const forcaSenha = document.querySelector('.forca');
+const caixaprincipal=document.queryselector("caixaprincipal");
+const caixaperguntas=document.queryselector("caixas-perguntas");
+const caixaAlternativas=document.queryselector("caixa-alternativas");
+const caixareultado= document.queryselector(".caixa resultado");
+const textoResultado= document.queryselector(".texto-resultado");
 
-botoes[0].onclick = diminuitamanho;
-botoes[1].onclick = aumentatamanho;
-
-function diminuitamanho(){
-    if (tamanhoSenha > 1){
-        //tamanhoSenha =tamanhoSenha-1;
-          tamanhoSenha--;
-    }      
-    numeroSenha.textContent = tamanhoSenha;
-    geraSenha();
+const perguntas = []
+     {
+        enunciado: "Assim que saiu da escola voce se depara com uma nova tecnologia,um chat que consegue reponder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistatas. Qual o primeiro pensamento?",
+        alternativas: [
+     {
+           texto: "isso é asustador!",
+           afirmação: "afirmação"
+     },
+    {
+           texto: "Isso é maravilhoso!",
+           afirmação: "afirmação"
+    }
+  [
+{,
 }
-function aumentaTamanho(){
-    if (tamanhoSenha < 20){
-        //tamanhoSenha = tamanhoSenh+1;
-        tamanhoSenha++;
-    }
+        enunciado:"Com a descoberta desta tecnologia, chamada inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula, Qual atitude você toma?",
+        alternativas: [
+            {
+                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que faciliter o entendimento",
+                afirmação: "afirmação"
+            },
+            {
+                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios",
+                afirmação: "afirmação"
+           }
+        [
+      {,
+      }
+        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. ss"  
 
-    numeroSenha.textContent = tamanhoSenha;
-    geraSenha();
-}
 
-    for (i = 0; 1 < checkbox.length; i++) {
-        checkbox[i].onclick = geraSenha
-    }
 
-    geraSenha();
 
-function geraSenha(){
-    let alfabeto = '';
-    if (checkbox[0].checked) {
-        alfabeto = alfabeto + letrasMaiusculas;
-    }
-   if (checkbox[1].checked) {
-    }
-    if (checkbox[2].checked) {
-        alfabeto = alfabeto = numeros;
-    }
-    if (checkbox[3].checked) {
-        alfabeto = alfabeto = simbolos;
-    }
-}
-let senha = '';
-for (let i = 0; i < tamanhoSenha; i++) {
-    let numeroAleatorio = Math.random() * alfabeto.length;
-    numeroAleatorio = Math.floor(numeroAleatorio);
-    senha = senha + alfabeto[numeroAleatorio];
-}
-campoSenha.value = senha;
-classificaSenha(alfabeto.lenght);
+        ]
 
-function classificaSenha(tamanhoAlfabeto){
-    let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
-    console.log(entropia);
-    forcaSenha.classList.remove('fraca','media','forte');
-    if (entropia > 57){
-        forcaSenha.classList.add('forte');
-    } else if (entropia > 35 && entropia < 57 ) {
-        forcaSenha.classList.add('media');
-    } else if (entropia <= 35) {
-        forcaSenha.classList.add('fraca');
-    }
-    const valorEntropia = document.querySelector('.entropia');
-    valorEntropia.textContent = "Um computador pode levar ate" + Math.floor(2**entropia/(100e6*60*60*24)) + "dias para"
 
-}
+
+
+
+      
+
+
+
+
+
+
+
+
+        ]
+
+
+
+  ]
+
+
+
+
+
+
+
+
+
+
+
+        ]               
+
+     
+
+
+
+
+
+
+
+
