@@ -32,12 +32,130 @@ const perguntas = []
         [
       {,
       }
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. ss"  
+        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você e posiciona?",
+        alternativas: [
+            {
+                texto: "Defende a ideia que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                afirmação: "afirmação"
+                {,
+
+                }
+                texto; "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importáncia de proteger os trabalhadores.",
+                afirmação: "afirmação"
+            {
+
+        }    
+      [,
+
+
+      ]
+      enunciado; "Ao final da discussão, voçê precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+      alternativas: [
+           {
+                texto: "Criar uma imagem utiliando uma plataforma de design como o Paint.",
+                afirmação: "afirmação"
+              },
+              {
+      enunciado: "Voçê tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho esta totalmente igual as do chat. O que voçê faz?",
+      alternativas: [
+           {
+                texto: "Ecreva comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                afirmação: "afirmação"
+           {
+        [
+     {,
+  [
+
+  let atual = 0;
+  let perguntaAtual;
+
+  function mostraPergunta() {
+      perguntaAtual = pergunta[atual];
+      caixaPerguntas.textContent = perguntaAtual.enunciado;
+      mostraAlternativas();
+   }
+
+  function mostraAlternativas() {
+      for (const alternativa of perguntaAtual)
+  }
+
+  ]
+
+
+
+
+
+     }
+
 
 
 
 
         ]
+
+
+
+
+
+
+           }
+
+
+
+
+
+           }
+
+
+
+
+
+      ]
+
+
+
+
+
+
+              }
+
+
+
+
+
+
+
+
+      ]
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+       
 
 
 
